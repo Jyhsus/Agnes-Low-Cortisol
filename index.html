@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden; 
+            background-color: #ffffff;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            image-rendering: -webkit-optimize-contrast; 
+            image-rendering: crisp-edges;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay loop playsinline>
+            <source src="agneslowcortisol.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>
